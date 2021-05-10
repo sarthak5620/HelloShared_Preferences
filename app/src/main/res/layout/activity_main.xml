@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/CountValue"
+        android:layout_width="336dp"
+        android:layout_height="518dp"
+        android:layout_marginTop="28dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="@string/CountValue"
+        android:textColor="@color/white"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BlackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/black"
+        app:backgroundTint="@color/black"
+        android:onClick="changeBgColorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RedButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CountValue" />
+
+    <Button
+        android:id="@+id/RedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red"
+        app:backgroundTint="#FF0000"
+        android:onClick="changeBgColorRed"
+        app:layout_constraintBottom_toBottomOf="@+id/BlackButton"
+        app:layout_constraintEnd_toStartOf="@+id/BlueButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BlackButton" />
+
+    <Button
+        android:id="@+id/GreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/green"
+        app:backgroundTint="#00FF00"
+        android:onClick="changeBgColorGreen"
+        app:layout_constraintBottom_toBottomOf="@+id/BlueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BlueButton" />
+
+    <Button
+        android:id="@+id/BlueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blue"
+        app:backgroundTint="#0000FF"
+        android:onClick="changeBgColorBlue"
+        app:layout_constraintBottom_toBottomOf="@+id/RedButton"
+        app:layout_constraintEnd_toStartOf="@+id/GreenButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/RedButton" />
+
+    <Button
+        android:id="@+id/CountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/count"
+        android:textColor="@color/black"
+        app:backgroundTint="#D3D3D3"
+        android:onClick="increaseCount"
+        app:layout_constraintEnd_toStartOf="@+id/ResetButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlackButton" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textColor="@color/black"
+        app:backgroundTint="#D3D3D3"
+        android:onClick="resetValues"
+        app:layout_constraintBottom_toBottomOf="@+id/CountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/CountButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

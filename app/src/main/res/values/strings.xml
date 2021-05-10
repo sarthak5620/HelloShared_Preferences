@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hello Shared Preferences</string>
+    <string name="CountValue">0</string>
+    <string name="black">BLACK</string>
+    <string name="red">RED</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+    <string name="reset">RESET</string>
+    <string name="count">COUNT</string>
+</resources>
