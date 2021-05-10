@@ -4,7 +4,7 @@ Shared preferences help keeping data of the user once an activity or app is dest
 
 It is a part of a Codelab assigned which includes of three parts..each of which the link is given below:
 
-[Hello Shared Preferences](https://github.com/sarthak5620/HelloShared_Preferences/new/master?readme=1)    Download[APK](https://github.com/sarthak5620/HelloShared_Preferences/blob/master/helloSharedPreferences.apk)
+[Hello Shared Preferences](https://github.com/sarthak5620/HelloShared_Preferences)    Download[APK](https://github.com/sarthak5620/HelloShared_Preferences/blob/master/helloSharedPreferences.apk)
 
 [Constrained Layout 1](https://github.com/sarthak5620/ConstraintLayout1)    Download [APK](https://github.com/sarthak5620/ConstraintLayout1/blob/master/ConstraintLayout1.apk)
 
